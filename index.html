@@ -6,42 +6,70 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
+    <script src="https://use.fontawesome.com/5212501da1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lora|Oswald&display=swap" rel="stylesheet">
     <title>Abdiel Ortega</title>
 </head>
 <body>
-    <header>
-        <h1>Abdiel Ortega</h1>
-        <ul>
-            <li><a href="#about">Acerca de mí</a></li>
-            <li><a href="#experience">Experiencia</a></li>
-            <li><a href="#contact">Contacto</a></li>
+    <header class="header">
+        <h1 class="header__title">Abdiel Ortega</h1>
+        <ul class="header__navbar">
+            <li class="header__navbar--button"><a href="#about">Acerca de mí</a></li>
+            <li class="header__navbar--divider"></li>
+            <li class="header__navbar--button"><a href="#experience">Experiencia</a></li>
+            <li class="header__navbar--divider"></li>
+            <li class="header__navbar--button"><a href="#contact">Contacto</a></li>
         </ul>
     </header>
+    <hr>
     <section class="about" id="about">
-        <h1>Acerca de mí</h1>
-        <div>
-            <p>Particles experiment with paralysis at the ship-wide habitat quicklymake it so! Dozens of lieutenant commanders invade galactic, carnivorous protons.</p>
-            <img src="https://images.unsplash.com/photo-1536104968055-4d61aa56f46a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="">
+        <div class="about__content">
+            <h1 class="about__title">Acerca de mí</h1>
+            <div class="about__divider"></div>
+            <p class="about__content--text">Particles experiment with paralysis at the ship-wide habitat quicklymake it so! Dozens of lieutenant commanders invade galactic, carnivorous protons.</p>
         </div>
+        <img class="about__content--img" src="https://images.unsplash.com/photo-1536104968055-4d61aa56f46a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="">
     </section>
+    <hr>
     <section class="experience" id="experience">
-        <h1>Experiencia</h1>
-        <div>
-            <h2>Puesto</h2>
-            <p>Particles experiment with paralysis at the ship-wide habitat quicklymake it so! Dozens of lieutenant commanders invade galactic, carnivorous protons.</p>
+        <h1 class="experience__title">Experiencia</h1>
+        <div class="project">
+            <div class="project__content">
+                <h2 class="project__content--title">Puesto</h2>
+                <p class="project__content--text">Particles experiment with paralysis at the ship-wide habitat quicklymake it so! Dozens of lieutenant commanders invade galactic, carnivorous protons.</p>
+            </div>
+            <img class="project__content--img" src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
         </div>
-        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
     </section>
+    <hr>
     <section class="contact" id="contact">
-        <h1>Contacto</h1>
-        <ul>
-            <li><a href="">Github</a></li>
-            <li><a href="">Correo</a></li>
-            <li>Teléfono</li>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Twitter</a></li>
-            <li><a href="">Linkedin</a></li>
+        <h1 class="contact__title">Contacto</h1>
+        <ul class="contact__list">
+            <li class="contact__list--element">
+                <i class="fa fa-github" aria-hidden="true"></i> <a href="">Github</a>
+            </li>
+            <li class="contact__list--element">
+                <i class="fa fa-envelope" aria-hidden="true"></i> <a href="">Correo</a>
+            </li>
+            <li class="contact__list--element">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i> <a href="">Facebook</a>
+            </li>
+            <li class="contact__list--element">
+                <i class="fa fa-twitter-square" aria-hidden="true"></i> <a href="">Twitter</a>
+            </li>
+            <li class="contact__list--element">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i> <a href="">Linkedin</a>
+            </li>
+            <li class="contact__list--element">
+                <i class="fa fa-instagram" aria-hidden="true"></i> <a href="">Instagram</a>
+            </li>
+            <li class="contact__list--element">
+                <i class="fa fa-phone" aria-hidden="true"></i> Teléfono
+            </li>
         </ul>
     </section>
+    <footer class="footer">
+        <p class="footer__text">Diseñado y maquetado con 💛 por Abdiel Ortega 2019</p>
+    </footer>
 </body>
 </html>
