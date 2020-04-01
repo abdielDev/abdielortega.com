@@ -5,6 +5,31 @@ body {
     margin: 0;
 }
 
+hr {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: #EFEFEF;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    width: 90%;
+}
+
+hr:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: #EFEFEF;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+strong {
+    text-decoration: underline;
+}
+
 .header {
     border: 5px solid #EFEFEF;
     padding: 10px;
@@ -40,41 +65,31 @@ body {
     font-weight: bold;
 }
 
-hr {
-    overflow: visible; /* For IE */
-    height: 30px;
-    border-style: solid;
-    border-color: #EFEFEF;
-    border-width: 1px 0 0 0;
-    border-radius: 20px;
-}
-
-hr:before {
-    display: block;
-    content: "";
-    height: 30px;
-    margin-top: -31px;
-    border-style: solid;
-    border-color: #EFEFEF;
-    border-width: 0 0 1px 0;
-    border-radius: 20px;
-}
-
 .about {
     display: flex;
     border: 5px solid #EFEFEF;
     padding: 10px;
     margin-bottom: 40px;
+    justify-content: space-between;
 }
 
-.about__divider {
+.about__content {
+    max-width: 55%;
+}
+
+.about__content--divider {
     width: 60px;
     height: 2px;
     background-color: #F7B031;
 }
 
-.about__content--img {
-    width: 400px;
+.about__content--text {
+    text-align: justify;
+}
+
+.about__img {
+    min-width: 30%;
+    max-height: 260px;
 }
 .experience {
     margin-bottom: 40px;
@@ -85,15 +100,49 @@ hr:before {
     padding-left: 10px;
 }
 
+.project__content--text {
+    text-align: justify;
+}
+
 .project {
     border: 5px solid #EFEFEF;
     padding: 10px;
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.project:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.project__content {
+    max-width: 55%;
+}
+
+.project__content--title a {
+    text-decoration: none;
+    color: #F7B031;
+}
+
+.project__content--title a:hover {
+    text-decoration: underline;
 }
 
 .project__content--img {
-    width: 400px;
+    min-width: 30%;
+    max-height: 260px;
     border-radius: 100%;
+}
+
+.project__content--text a {
+    color: #F7B031;
+}
+
+#wawa {
+    object-fit: contain;
+    background-color: white;
+    border-radius: 40%;
 }
 
 .contact {

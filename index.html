@@ -24,52 +24,99 @@
     <hr>
     <section class="about" id="about">
         <div class="about__content">
-            <h1 class="about__title">Acerca de mí</h1>
-            <div class="about__divider"></div>
-            <p class="about__content--text">Particles experiment with paralysis at the ship-wide habitat quicklymake it so! Dozens of lieutenant commanders invade galactic, carnivorous protons.</p>
+            <h1 class="about__content--title">Acerca de mí</h1>
+            <div class="about__content--divider"></div>
+            <p class="about__content--text">
+                Hola mi nombre es José Abdiel Ortega Vázquez soy originario y vivo en Aguascalientes México y soy <strong>Desarrollador Fullstack en JavaScript</strong> tengo conocimientos de React, Express, Laravel, Vue, y bases de datos SQL y noSQL. Estudié en el <strong>Tecnológico Nacional de México</strong> Ingeniería en TIC's y en plataformas como Udemy. Actualmente estudio en Platzi Desarrollo de Software e inglés y quiero aprender diseño también. Me gusta compartir el conocimiento con otras personas y retroalimentarnos. Me gusta cantar y bailar. Amo mi país y al resto de Latinoamérica por su cultura y paisajes.
+            </p>
         </div>
-        <img class="about__content--img" src="https://images.unsplash.com/photo-1536104968055-4d61aa56f46a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="">
+        <img class="about__img" src="https://images.unsplash.com/photo-1536104968055-4d61aa56f46a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="">
     </section>
     <hr>
     <section class="experience" id="experience">
+
         <h1 class="experience__title">Experiencia</h1>
+
         <div class="project">
             <div class="project__content">
-                <h2 class="project__content--title">Puesto</h2>
-                <p class="project__content--text">Particles experiment with paralysis at the ship-wide habitat quicklymake it so! Dozens of lieutenant commanders invade galactic, carnivorous protons.</p>
+                <h2 class="project__content--title">Desarrolador Frontend y Backend en Proyecto <a target="_blank" href="https://github.com/abdieljortega/Platzi-video-SSR-">Platzi vídeo <i class="fa fa-github" aria-hidden="true"></i></a></h2>
+                <small><em>Febrero del 2020 - Actualidad</em></small>
+                <p class="project__content--text">
+                    Platzi video es una aplicación web donde puedes reproducir tus vídeos favoritos. En está aplicación se desarrolló desde la maquetación con HTML y CSS de las diferentes vistas, se agregó interactividad con la librería favorita de la casa React. Se crearon las APIs de la aplicación con la librería de Node JS Express donde se llevó a cabo la arquitectura Clean Architecture. Y finalmente se está integrando el Backend y el Frontend.
+                </p>
             </div>
-            <img class="project__content--img" src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+            <img class="project__content--img" id="platziVideo" src="https://res.cloudinary.com/abdiel8real/image/upload/v1585721679/logo-platzi-video-BW2_asc5rk.png" alt="">
         </div>
+
+        <div class="project">
+            <div class="project__content">
+                <h2 class="project__content--title">Desarrollador Frontend y Backend en <a target="_blank" href="http://www.mascotas.kiubix.biz/">Wawa <i class="fa fa-globe" aria-hidden="true"></i></a></h2>
+                <small><em>Marzo del 2019 - Julio del 2019</em></small>
+                <p class="project__content--text">
+                    Wawa es una red social para donde puedes registrarlas para poder hacer un reporte de desaparición y adopción o hasta tú podrás adoptar. Esta aplicación tiene un feed para subir contenido multimedia dónde puedes ver consejos para educar tus mascotas o simplemente ver contenido divertido de mascotas. Se colaboró en
+                    <a href="http://www.cceo.com.mx/">CCEO Software Development</a> en las tareas de construir vistas con Vue JS, hacer controladores y modelos para las APIs con Laravel que consumiría la aplicación móvil. Para posteriormente integrar el backend y el frontend.
+                </p>
+            </div>
+            <img class="project__content--img" id="wawa" src="http://www.mascotas.kiubix.biz/assets/images/logo1.png" alt="Wawa logo">
+        </div>
+
+        <div class="project">
+            <div class="project__content">
+                <h2 class="project__content--title">
+                    Desarrollador Frontend y Backend en
+                    <a target="_blank" href="https://github.com/abdieljortega/YelpCamp">
+                        Yelp Camp <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </h2>
+                <small><em>Junio del 2019 - Agosto del 2019</em></small>
+                <p class="project__content--text">
+                    Yelp Camp es un proyecto personal que sirve para promocionar campamentos y mostrar su localización con la API de Google para programar una visita al aire libre. Este fue desarrollado con la librería Express y vistas tradicionales con Ejs. También se usó la API de Cloudinary para guardar los archivos.
+                </p>
+            </div>
+            <img class="project__content--img" src="https://images.unsplash.com/photo-1487730116645-74489c95b41b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+        </div>
+
+        <div class="project">
+            <div class="project__content">
+                <h2 class="project__content--title">Desarrollador Software y Hardware en Alarm-ITA</h2>
+                <small><em>Septiembre del 2018 - Diciembre del 2018</em></small>
+                <p class="project__content--text">
+                    Alarm-Ita es un proyecto escolar que se realizó con el objetivo de hacer una alarma remota que se puede encender y apagar desde un navegador web y quedará registro de quién la encendió o apagó. Si esta se llegase a activar mientras está encendida sonaría un buzzer y una cámara te empezaría a grabar y guardaría el video en una Raspberry. Se desarrolló un software con Node JS para las funciones del Hardware y Socket.IO para comunicarse con el servidor. Y el servidor y las vistas se hicierón con Express y Ejs
+                </p>
+            </div>
+            <img class="project__content--img" src="https://images.unsplash.com/photo-1552283576-3ea3519bf12e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+
     </section>
     <hr>
     <section class="contact" id="contact">
         <h1 class="contact__title">Contacto</h1>
         <ul class="contact__list">
             <li class="contact__list--element">
-                <i class="fa fa-github" aria-hidden="true"></i> <a href="">Github</a>
+                <i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/abdieljortega">Github</a>
             </li>
             <li class="contact__list--element">
-                <i class="fa fa-envelope" aria-hidden="true"></i> <a href="">Correo</a>
+                <i class="fa fa-envelope" aria-hidden="true"></i> nathanabdiel1@gmail.com
             </li>
             <li class="contact__list--element">
-                <i class="fa fa-facebook-official" aria-hidden="true"></i> <a href="">Facebook</a>
+                <i class="fa fa-facebook-official" aria-hidden="true"></i> <a href="https://www.facebook.com/abdieljortega/">Facebook</a>
             </li>
             <li class="contact__list--element">
-                <i class="fa fa-twitter-square" aria-hidden="true"></i> <a href="">Twitter</a>
+                <i class="fa fa-twitter-square" aria-hidden="true"></i> <a href="https://twitter.com/abdieljortega">Twitter</a>
             </li>
             <li class="contact__list--element">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i> <a href="">Linkedin</a>
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/abdiel-ortega-18131a193/">Linkedin</a>
             </li>
             <li class="contact__list--element">
-                <i class="fa fa-instagram" aria-hidden="true"></i> <a href="">Instagram</a>
+                <i class="fa fa-instagram" aria-hidden="true"></i> <a href="https://www.instagram.com/">Instagram</a>
             </li>
             <li class="contact__list--element">
-                <i class="fa fa-phone" aria-hidden="true"></i> Teléfono
+                <i class="fa fa-phone" aria-hidden="true"></i> 4492678272
             </li>
         </ul>
     </section>
     <footer class="footer">
-        <p class="footer__text">Diseñado y maquetado con 💛 por Abdiel Ortega 2019</p>
+        <p class="footer__text">Diseñado y maquetado con 💛 por Abdiel Ortega 2020</p>
     </footer>
 </body>
 </html>
