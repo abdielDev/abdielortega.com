@@ -28,6 +28,7 @@ hr:before {
 
 strong {
     text-decoration: underline;
+
 }
 
 .header {
@@ -85,6 +86,11 @@ strong {
 
 .about__content--text {
     text-align: justify;
+}
+
+.about__content--text a {
+    color: #F7B031;
+    font-weight: bold;
 }
 
 .about__img {
