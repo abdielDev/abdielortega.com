@@ -57,11 +57,16 @@ strong {
     background-color: #F7B031;
 }
 
-.header__navbar--button a {
+.header__navbar--button {
     background-color: transparent;
     border: #F7B031 solid 2px;
-    text-decoration: none;
     padding: 10px 20px;
+    text-align: center;
+    transition: 0.6s;
+}
+
+.header__navbar--button a {
+    text-decoration: none;
     color: #F7B031;
     font-weight: bold;
 }
@@ -174,4 +179,76 @@ strong {
 
 .footer__text {
     text-align: center;
+}
+
+/* Responsive queries */
+
+@media only screen and (max-width: 576px) {
+
+    hr {
+        display: none;
+    }
+
+    .header {
+        padding: 0;
+    }
+
+    .header__title {
+        padding: 10px;
+    }
+
+    .header__navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .header__navbar--button {
+        width: 100%;
+    }
+
+    .header__navbar--button:first-child {
+        border-bottom: none;
+    }
+
+    .header__navbar--button:last-child {
+        border-top: none;
+    }
+
+    .header__navbar--divider {
+        display: none;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about__content {
+        max-width: 100%;
+    }
+
+    .project {
+        flex-direction: column!important;
+    }
+
+    .project__content {
+        max-width: 100%;
+    }
+
+    .project__content--title {
+        text-align: center;
+    }
+
+    .contact__title {
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: solid 1px #F7B031;
+    }
+
+    .contact__list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact__list--element {
+        padding-bottom: 25px;
+    }
 }
